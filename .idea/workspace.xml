@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bde2be1b-040d-4701-8c46-6955b3d5a462" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/DinnerTable/Epiphany.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/DinnerTable/Epiphany.scala" afterDir="false" />
-    </list>
+    <list default="true" id="bde2be1b-040d-4701-8c46-6955b3d5a462" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
