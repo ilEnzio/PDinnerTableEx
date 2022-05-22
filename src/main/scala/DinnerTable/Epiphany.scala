@@ -2,7 +2,7 @@ package DinnerTable
 
 object Epiphany {
 
-/*
+  /*
 The requirements mostly come from the wiki page:
 https://en.wikipedia.org/wiki/Dining_philosophers_problem
 
@@ -12,7 +12,7 @@ Philosophers States: Eating, Thinking, Talking(Hungry)
 
 
 Event Storm -
-  EphinanyReached - an event which triggers state changes for all Philosophers and
+  EpiphanyReached - an event which triggers state changes for all Philosophers and
     possible a Fork workflow event.
 
   StartedEating
@@ -41,8 +41,26 @@ Workflow: "Paradigm Shift"
 
 
 
- */
+   */
 
+  case class Philosopher(
+      name: String,
+      state: ParadigmState,
+      leftFork: ForkState,
+      rightFork: ForkState
+  ) {}
 
+  sealed trait ParadigmState
+  case object StartedEating extends ParadigmState
+  case object StartedThinking extends ParadigmState
+  case object StartedTalking extends ParadigmState
+
+  sealed trait ForkState
+  case object ForkGrabbed extends ForkState
+  case object ForkState extends ForkState
+
+  def main(args: Array[String]): Unit = {
+    println("test")
+  }
 
 }
